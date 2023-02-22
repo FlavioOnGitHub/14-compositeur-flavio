@@ -1,5 +1,5 @@
 body {
-  max-width: 320px;
+  max-width: 375px;
   margin: auto;
   background: #ddd;
 }
@@ -7,4 +7,24 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+nav .container {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: red;
+  align-items: center;
+}
+
+.element {
+  font-family: Nunito;
+  font-weight: bold;
+  padding: 18px 23px;
+}
+
+.element:hover {
+  background-color: blue;
+  transition: 1s;
 }
