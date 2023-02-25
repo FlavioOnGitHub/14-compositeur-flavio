@@ -1,7 +1,7 @@
 html {
-  background: rgb(163,212,228);
-  background: radial-gradient(circle, rgba(163,212,228,1) 0%,
-  rgba(98,73,95,1) 100%);
+  background-image:  repeating-radial-gradient(circle at 0 0, transparent 0,
+  #2f3638 62px), repeating-linear-gradient(#191615, #191615);
+  background-color: #2f3638;
   scroll-behavior: smooth;
 }
 
@@ -17,26 +17,26 @@ img {
   margin-bottom: 0;
 }
 
-
-
-
-
-
-nav .container {
-  font-size: 12px;
+/* here starts the nav section */
+nav .navigation {
+  font-size: 14px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: #ED9B28;
+  list-style-type: none;
+  padding-left: 0;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  align-items: center;
+  margin: 0;
 }
 
 .element {
   font-family: Nunito;
   font-weight: bold;
-  padding: 18px 23px;
   color: black;
-  border-top: 5px black solid;
-  border-bottom: 5px black solid;
+  text-align: center;
 }
 
 .element:hover {
@@ -48,11 +48,11 @@ nav .container {
 .element a {
   text-decoration: none;
   color: inherit;
+  padding: 18px 23px;
+  display: inline-block;
 }
 
-
-
-
+/* here starts the main section */
 main {
   background-image: url("../img/fond-site.svg");
   background-repeat: no-repeat;
@@ -66,8 +66,8 @@ h1 {
   font-family: brush-script-std, sans-serif;
   font-size: 70px;
   font-weight: 100;
-  margin: 0 53px 95px 53px ;
-  padding-top: 30px;
+  margin: 0 53px 95px 53px;
+  padding-top: 35px;
 }
 
 .part-1-title {
@@ -78,18 +78,31 @@ h1 {
   color: #163643;
 }
 
+h2 {
+  font-size: 35px;
+  font-family: brush-script-std;
+  text-align: center;
+  font-weight: 100;
+  margin: 30px;
+  color: #EB7C2B;
+}
+
 .description {
   font-size: 15px;
   margin: 0 40px 70px 40px;
   text-align: left;
-  font-weight: 300;
   color: #153643;
 }
 
 .p-1 {
   margin-left: 128px;
   margin-right: 20px;
+  margin-bottom: 70px;
   color: #153643;
+}
+
+.p-2 {
+  margin: 0 50px 45px 30px;
 }
 
 .img-main {
@@ -97,62 +110,70 @@ h1 {
 }
 
 .portrait {
-  margin: 0px 23px 8px 23px;
+  margin: 0px 23px 7px 23px;
   width: 327px;
 }
 
 .img-txt {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: lighter;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
 }
 
 .img-txt, .description {
   font-family: seravek;
 }
 
-h2 {
-  font-size: 35px;
-  font-family: brush-script-std;
-  text-align: center;
-  font-weight: 100;
-  margin: 40px;
+.quote {
+  color: #163643;
+  font-family: seravek;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  margin: 58px 30px 45px 40px;
+}
+
+.quote-1 {
+  font-size: 36px;
+  line-height: 20px;
+}
+
+.quote-3 {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+
+
+footer {
+  background-color: #153643;
   color: #EB7C2B;
-}
-
-hr {
-  border: 2px solid white;
-  border-radius: 2px;
-  width: 330px;
-  margin-bottom: 55px;
-}
-
-
-
-
-footer{
-  background-color: #DBD2D8;
-  padding: 10px 10px 80px 10px;
-  border-radius: 20px 20px 0 0;
-  color: #153643;
+  border-top: #EB7C2B 2px dotted;
+  font-family: seravek;
+  font-size: 12px;
   text-align: center;
-  font-family: Seravek;
-  font-size: 16pt;
+  margin: 0;
+  padding: 20px 0 110px 0;
 }
 
-.footer-name{
-  font-weight: bold;
+.references-1 {
+  font-weight: 500;
 }
 
-.footer-signature{
-  line-height: 40pt;
+.references-3 {
+  line-height: 18px;
+  font-size: 11px;
 }
 
 
 
 
+
+/* here is the player section */
 .player {
-  background-color: #0A8B8D;
+  background-color: #ED9B28;
   display: flex;
   flex-wrap: nowrap;
   position: fixed;
