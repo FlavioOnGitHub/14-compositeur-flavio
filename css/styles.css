@@ -209,12 +209,26 @@ footer {
   font-size: 16px;
 }
 
-.play-button {
+.play-button{
   height: 55px;
   width: 55px;
   margin: auto 15px auto 0;
+  background-color: transparent;
+  border: 0;
 }
 
 .play-button:hover{
+  cursor: grab;
+}
+
+.pause-button{
+  height: 55px;
+  width: 55px;
+  margin: auto 15px auto 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.pause-button:hover{
   cursor: grab;
 }

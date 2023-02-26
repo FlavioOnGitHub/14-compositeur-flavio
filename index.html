@@ -117,17 +117,34 @@
       
       
 
-      <div class="player">
+    <div class="player">
       <img src="img/departure.jpeg" class="album">
       <p class="player-txt">
         <span class="song"> Aruarian Dance </span> <br>
         <span class="artist"> Nujabes </span> 
       </p>
-      <img src="img/play-button.svg" class="play-button">
+      <button id="play-button" style="display: none;" class="play-button">
+        <img src="img/play-button.svg">
+      </button>
+      <button id="pause-button" style="display: none;" class="pause-button">
+        <img src="img/pause-button.svg">
+      </button>
+      
+      <audio id="audio-file">
+        <source
+          src="media/videoplayback.mp4"
+          type="audio/mp4" />
+        <source
+          src="media/videoplayback.ogg"
+          type="audio/ogg" />
+        <!-- place fallback here as <audio> supporting browsers will ignore it -->
+        <a href="media/videoplayback.mp4">audiofile.mp4</a>
+      </audio>
+      
     </div>
   
 
-  <script> src="index.js" </script>
+  <script src="index.js"> </script>
 
 
 
