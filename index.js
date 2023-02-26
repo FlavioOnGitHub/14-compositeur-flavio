@@ -26,4 +26,9 @@ window.onload = () => {
     pause.style.display = "none";
     play.style.display = "block";
   });
+
+  audio.addEventListener("ended", () => {
+    play.style.display = "block";
+    pause.style.display = "none";
+  });
 };

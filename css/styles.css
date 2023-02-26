@@ -1,7 +1,7 @@
 html {
-  background-image:  repeating-radial-gradient(circle at 0 0, transparent 0,
-  #2f3638 62px), repeating-linear-gradient(#191615, #191615);
-  background-color: #2f3638;
+  background: rgb(103,108,159);
+  background: linear-gradient(90deg, rgba(103,108,159,1) 0%, 
+  rgba(135,137,150,1) 41%, rgba(135,137,150,1) 64%, rgba(100,106,162,1) 100%);
   scroll-behavior: smooth;
 }
 
@@ -12,24 +12,30 @@ body {
   color: #DBD2D8;
 }
 
+@-moz-document url-prefix() {
+  main {
+    padding-bottom: 25px;
+  }
+}
+
 img { 
   display: block; 
   margin-bottom: 0;
 }
 
 /* here starts the nav section */
-nav .navigation {
+.navigation {
   font-size: 14px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   background-color: #ED9B28;
   list-style-type: none;
   padding-left: 0;
   border-top: 5px black solid;
   border-bottom: 5px black solid;
-  align-items: center;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .element {
@@ -40,9 +46,8 @@ nav .navigation {
 }
 
 .element:hover {
-  background-color: #EB7C2B;
   transition: 1s;
-  color: white;
+  color: #153643; 
 }
 
 .element a {
@@ -70,21 +75,26 @@ h1 {
   padding-top: 35px;
 }
 
-.part-1-title {
-  color: #EB7C2B;
-}
-
-.part-2-title {
-  color: #163643;
-}
-
 h2 {
   font-size: 35px;
   font-family: brush-script-std;
   text-align: center;
   font-weight: 100;
-  margin: 30px;
+  margin: 30px 30px 40px 30px;
   color: #EB7C2B;
+}
+
+strong {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.part-1-title {
+  color: #EB7C2B;
+}
+
+.part-2-title {
+  color: #153643;
 }
 
 .description {
@@ -109,7 +119,7 @@ h2 {
   width: 327px;
 }
 
-.portrait {
+.img-persons {
   margin: 0px 23px 7px 23px;
   width: 327px;
 }
@@ -118,20 +128,26 @@ h2 {
   font-size: 12px;
   font-weight: lighter;
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 }
 
 .img-txt, .description {
   font-family: seravek;
 }
 
+.trailer h2 {
+  margin-bottom: 30px;
+}
+
+
+/* quote section*/
 .quote {
-  color: #163643;
+  color: #153643;
   font-family: seravek;
   font-weight: 500;
   font-style: italic;
   font-size: 18px;
-  margin: 58px 30px 45px 40px;
+  margin: 65px 30px 45px 40px;
 }
 
 .quote-1 {
@@ -145,8 +161,7 @@ h2 {
   font-weight: normal;
 }
 
-
-
+/* the footer section*/
 footer {
   background-color: #153643;
   color: #EB7C2B;
@@ -155,7 +170,7 @@ footer {
   font-size: 12px;
   text-align: center;
   margin: 0;
-  padding: 20px 0 110px 0;
+  padding: 10px 0 100px 0;
 }
 
 .references-1 {
@@ -166,10 +181,6 @@ footer {
   line-height: 18px;
   font-size: 11px;
 }
-
-
-
-
 
 /* here is the player section */
 .player {
@@ -209,7 +220,7 @@ footer {
   font-size: 16px;
 }
 
-.play-button{
+.play-button {
   height: 55px;
   width: 55px;
   margin: auto 15px auto 0;
@@ -217,11 +228,7 @@ footer {
   border: 0;
 }
 
-.play-button:hover{
-  cursor: grab;
-}
-
-.pause-button{
+.pause-button {
   height: 55px;
   width: 55px;
   margin: auto 15px auto 0;
@@ -229,6 +236,6 @@ footer {
   border: 0;
 }
 
-.pause-button:hover{
+.play-button:hover, .pause-button:hover {
   cursor: grab;
 }
