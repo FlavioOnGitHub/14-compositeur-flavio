@@ -35,8 +35,8 @@ img {
   background-color: #ED9B28;
   list-style-type: none;
   padding-left: 0;
-  border-top: 3.5px black solid;
-  border-bottom: 3.5px black solid;
+  border-top: 4px black solid;
+  border-bottom: 4px black solid;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -75,10 +75,10 @@ main {
 h1 {
   text-align: center;
   font-family: brush-script-std, sans-serif;
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 100;
   margin: 0 53px 95px 53px;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 h2 {
@@ -93,6 +93,10 @@ h2 {
 strong {
   font-weight: 600;
   font-style: italic;
+}
+
+.film-title {
+  margin-bottom: 47px;
 }
 
 .part-1-title {
@@ -110,14 +114,14 @@ strong {
   color: #153643;
 }
 
-.p-1 {
+.compositor-text {
   margin-left: 128px;
   margin-right: 20px;
   margin-bottom: 70px;
   color: #153643;
 }
 
-.p-2 {
+.film-text {
   margin: 0 50px 45px 30px;
 }
 
@@ -153,15 +157,15 @@ strong {
   font-weight: 600;
   font-style: italic;
   font-size: 18px;
-  margin: 65px 30px 45px 40px;
+  margin: 55px 30px 45px 40px;
 }
 
-.quote-1 {
+.quote-elements {
   font-size: 36px;
   line-height: 20px;
 }
 
-.quote-3 {
+.quote-reference {
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -179,11 +183,11 @@ footer {
   padding: 10px 0 100px 0;
 }
 
-.references-1 {
+.references-film {
   font-weight: 600;
 }
 
-.references-3 {
+.references-credits {
   line-height: 18px;
   font-size: 11px;
 }
